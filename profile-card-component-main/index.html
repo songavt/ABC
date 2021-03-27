@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+      *{
+          margin:0;
+          padding:0;
+          font-family: 'Kumbh Sans', sans-serif;
+      }
+    .background{
+        background-color:hsl(185, 75%, 39%);
+       height:650px;
+       overflow:hidden;
+    }
+    img{
+        width:600px;
+        height:600px;
+    }
+    #imagetop{
+        position:relative;
+        right:100px;
+        bottom:200px;
+    }
+    #imagebot{
+        position:relative;
+        top:200px;
+        left:200px;
+    }
+    #blockmid{
+        height:120px;
+        width:400px;
+        margin-left:-10px;
+        border-radius:10px;
+    }
+    .block{
+        background-color:white;
+        position:absolute;
+        width:300px;
+        height:320px;
+        margin:100px;
+        right:100px;
+        left:400px;
+        top:0px;
+        bottom:0px;
+        border-radius:10px;
+        overflow:hidden;
+    }
+    #avatar{
+        width:70px;
+        height:70px;
+        border-radius:50px;
+        position:absolute;
+        left:115px;
+        top:85px;
+        border:5px solid white;
+
+    }
+    .silver-text{
+        color:silver;
+        text-align:center;
+        margin-bottom:40px;
+
+    }
+    span {
+        text-align:center;
+        color:silver;
+    }
+    .info{
+        margin:auto;
+        width:40%;
+        height:30px;
+    }
+    .cc{
+        margin-top:50px;
+    }
+    .info2{
+        color:black;
+        margin:25px;
+        
+    }
+  </style>
+   
+</head>
+<body>
+    <div class="background">
+        <img id="imagetop" src="images\bg-pattern-top.svg" alt="top" />
+        <img id="imagebot" src="images\bg-pattern-bottom.svg" alt="bot" />
+        <div class="block">
+            <img id="blockmid" src="images\bg-pattern-card.svg" alt="middle" />
+            <div>
+                <img id="avatar" src="images\image-victor.jpg" alt="avatar" />
+            </div>
+            <div class="cc">
+                <div class="info">
+                    <b>
+                        Victor Crest
+                    </b>
+                    <span>
+                        26
+                    </span>
+                </div>
+                <p class="silver-text">
+                    London
+                </p>
+                <hr />
+            </div>
+                <div style="margin:15px;margin-bottom:0;">
+                    <b class="info2">80K</b>
+                    <b class="info2">803K</b>
+                    <b class="info2">1.4K</b>
+                </div>
+            <div>
+                 <p style="margin:25px;display:inline;font-size:13px;color:silver;">Followers</p>
+                 <p style="margin:18px;display:inline;font-size:13px;color:silver;">Likes</p>
+                 <p style="margin:35px;display:inline;font-size:13px;color:silver;">Photo</p>   
+            </div>
+        </div>
+    </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
